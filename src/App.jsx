@@ -1,11 +1,14 @@
 
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1 className='bg-red-400'>BPL Dream 11</h1>
+      <header>
+        <Navbar></Navbar>
+      </header>
     </>
   )
 }
