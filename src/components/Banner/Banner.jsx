@@ -1,7 +1,10 @@
+import PropTypes from "prop-types";
 import bannerShadow from '../../assets/bg-shadow.png'
 import bannerImage from '../../assets/banner-main.png'
 
-const Banner = () => {
+const Banner = ({handleCredit}) => {
+    const totalCredit = 100000000;
+
     return (
         <div
             className="hero w-11/12 mx-auto mt-10 rounded-3xl bg-black"
@@ -18,12 +21,16 @@ const Banner = () => {
                         Beyond Boundaries Beyond Limits
                     </p>
                     <div className=' sm:w-1/5 mx-auto border border-[#e7fe29] rounded-2xl p-2'>
-                        <button className="w-full btn bg-[#E7FE29] text-black font-bold border-none">Claim Free Credit</button>
+                        <button onClick={() => handleCredit(totalCredit)} className="w-full btn bg-[#E7FE29] text-black font-bold border-none">Claim Free Credit</button>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
+Banner.propTypes = {
+    handleCredit: PropTypes.func.isRequired
+}
 
 export default Banner;

@@ -10,7 +10,7 @@ const Player = ({ player }) => {
         bowling_style,
         price,
     } = player;
-    console.log(player);
+
     return (
         <div className="card border border-[#e0e0e2]">
             <figure className="px-4 pt-10">

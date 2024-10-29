@@ -1,4 +1,4 @@
-
+import { useState } from 'react'
 import './App.css'
 import Available from './components/Available/Available'
 import Banner from './components/Banner/Banner'
@@ -9,11 +9,17 @@ import Subscribe from './components/Subscribe/Subscribe'
 
 function App() {
 
+  const [credit, setCredit] = useState(0);
+
+  const handleCredit = (totalCredit) => {
+    setCredit((prev) => prev + totalCredit);
+  }
+
   return (
     <>
       <header>
-        <Navbar></Navbar>
-        <Banner></Banner>
+        <Navbar credit={credit}></Navbar>
+        <Banner handleCredit={handleCredit}></Banner>
       </header>
 
       <main>
