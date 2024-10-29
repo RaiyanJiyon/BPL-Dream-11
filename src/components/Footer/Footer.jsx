@@ -32,9 +32,7 @@ const Footer = () => {
                     </fieldset>
                 </form>
             </div>
-
-            <div className="divider"></div>
-
+            <div className="divider border-t-2 border-[#e0e0e2]"></div>
             <p className='text-center text-[#FFFFFF99] text-sm pb-8'>@2024 Your Company All Rights Reserved.</p>
         </footer>
     );
