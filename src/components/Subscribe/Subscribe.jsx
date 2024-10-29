@@ -2,7 +2,7 @@ import bannerShadow from '../../assets/bg-shadow.png'
 
 const Subscribe = () => {
     return (
-        <div className='relative z-10 top-28 w-11/12 mx-auto border border-[#e7fe29] rounded-3xl p-3'>
+        <div className='relative z-10 top-28 w-11/12 mx-auto mt-32 border border-white rounded-3xl p-3'>
             <div
                 className="hero rounded-3xl bg-white"
                 style={{

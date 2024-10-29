@@ -13,10 +13,10 @@ const Footer = () => {
                 </nav>
                 <nav className='mr-32'>
                     <h6 className="footer-title text-white font-semibold">Quick Links</h6>
-                    <a className="link link-hover">Home</a>
-                    <a className="link link-hover">Service</a>
-                    <a className="link link-hover">About</a>
-                    <a className="link link-hover">Contact</a>
+                    <a className="link link-hover text-[#FFFFFF99]">Home</a>
+                    <a className="link link-hover text-[#FFFFFF99]">Service</a>
+                    <a className="link link-hover text-[#FFFFFF99]">About</a>
+                    <a className="link link-hover text-[#FFFFFF99]">Contact</a>
                 </nav>
                 <form className='w-11/12 md:w-full'>
                     <h6 className="footer-title text-white font-semibold">Subscribe</h6>
