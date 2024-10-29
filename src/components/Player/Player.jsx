@@ -36,10 +36,9 @@ const Player = ({ player }) => {
                             d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                         />
                     </svg>
-
                     <h2 className="card-title">{name}</h2>
                 </div>
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full mt-4 flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
@@ -48,7 +47,7 @@ const Player = ({ player }) => {
 
                     </div>
                     <div>
-                        <button className="btn">{playing_role}</button>
+                        <button className="btn cursor-not-allowed">{playing_role}</button>
                     </div>
                 </div>
                 <div className="divider"></div>
