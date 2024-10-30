@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 
-const Player = ({ player }) => {
+const Player = ({ player, handleSelectedPlayers }) => {
     const {
+        player_id,
         name,
         profile_image,
         region,
@@ -61,7 +62,7 @@ const Player = ({ player }) => {
 
                 <div className="w-full flex justify-between items-center mt-2">
                     <h3 className="w-full text-left font-bold">Price: ${price}</h3>
-                    <button className="btn bg-white border border-[#e0e0e2]">Choose Player</button>
+                    <button onClick={() => handleSelectedPlayers(player_id, price)} className="btn bg-white border border-[#e0e0e2]">Choose Player</button>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Players from './components/Players/Players'
 import Subscribe from './components/Subscribe/Subscribe'
+import SelectPlayers from './components/SelectPlayers/SelectPlayers'
 
 function App() {
 
@@ -15,6 +16,26 @@ function App() {
     setCredit((prev) => prev + totalCredit);
   }
 
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleActiveTab = (tabValue) => {
+    setActiveTab(tabValue);
+  }
+
+  const [selected, setSelected] = useState(0);
+
+const handleSelectedPlayers = (player_id, price) => {
+  console.log('Player Id', player_id);
+  console.log('Player Price', price);
+  console.log('Current Price', credit)
+  if (price > credit) {
+    alert('Insufficient money')
+  } else {
+    setSelected((prev) => prev + 1);
+    console.log('Okay', selected)
+  }
+} 
+
   return (
     <>
       <header>
@@ -23,8 +44,10 @@ function App() {
       </header>
 
       <main>
-        <Available></Available>
-        <Players></Players>
+        <Available handleActiveTab={handleActiveTab} selected={selected}></Available>
+
+        {activeTab === 1 && <Players  handleSelectedPlayers={handleSelectedPlayers} />}
+        {activeTab === 2 && <SelectPlayers />}
       </main>
 
       <footer>
