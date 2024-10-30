@@ -26,9 +26,13 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([])
 
   const handleCountPlayers = (player_id, profile_image, name, batting_style, price) => {
+    const isPlayerSelected  = selectedPlayers.some((player) => player.player_id === player_id)
 
+    console.log(isPlayerSelected)
     if (price > credit) {
       alert('Insufficient money')
+    } else if(isPlayerSelected) {
+      alert('Player are already selected')
     } else {
       setSelected((prev) => prev + 1);
       console.log('Okay', selected)
