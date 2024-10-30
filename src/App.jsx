@@ -23,18 +23,21 @@ function App() {
   }
 
   const [selected, setSelected] = useState(0);
+  const [selectedPlayers, setSelectedPlayers] = useState([])
 
-const handleSelectedPlayers = (player_id, price) => {
-  console.log('Player Id', player_id);
-  console.log('Player Price', price);
-  console.log('Current Price', credit)
-  if (price > credit) {
-    alert('Insufficient money')
-  } else {
-    setSelected((prev) => prev + 1);
-    console.log('Okay', selected)
+  const handleCountPlayers = (player_id, profile_image, name, batting_style, price) => {
+
+    if (price > credit) {
+      alert('Insufficient money')
+    } else {
+      setSelected((prev) => prev + 1);
+      console.log('Okay', selected)
+      setSelectedPlayers((prev) => [
+        ...prev, 
+        { player_id, profile_image, name, batting_style }
+      ]);
+    }
   }
-} 
 
   return (
     <>
@@ -46,8 +49,8 @@ const handleSelectedPlayers = (player_id, price) => {
       <main>
         <Available handleActiveTab={handleActiveTab} selected={selected}></Available>
 
-        {activeTab === 1 && <Players  handleSelectedPlayers={handleSelectedPlayers} />}
-        {activeTab === 2 && <SelectPlayers />}
+        {activeTab === 1 && <Players handleSelectedPlayers={handleCountPlayers} />}
+        {activeTab === 2 && <SelectPlayers selectedPlayers={selectedPlayers} />}
       </main>
 
       <footer>
