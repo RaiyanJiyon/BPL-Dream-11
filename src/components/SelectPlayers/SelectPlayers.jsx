@@ -11,6 +11,7 @@ const SelectPlayers = ({ selectedPlayers, handleActiveTab, removePlayer }) => {
                             <div>
                                 <h2 className="text-xl font-bold">{player.name}</h2>
                                 <p className="text-[#13131399]">{player.batting_style}</p>
+                                <p className="text-[#13131399]">Price: ${player.price}</p>
                             </div>
                         </div>
                         <svg onClick={() => removePlayer(player.player_id)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 cursor-pointer text-red-500">

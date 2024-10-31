@@ -44,7 +44,7 @@ function App() {
 
       setSelectedPlayers((prev) => [
         ...prev,
-        { player_id, profile_image, name, batting_style }
+        { player_id, profile_image, name, batting_style, price }
       ]);
     }
   }
