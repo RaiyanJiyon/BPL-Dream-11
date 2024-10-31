@@ -49,6 +49,14 @@ function App() {
     }
   }
 
+  const removePlayer = (player_id) => {
+    setSelectedPlayers((prevSelected) =>
+      prevSelected.filter((player) => player.player_id !== player_id)
+    );
+    setSelected((prevSelectedCount) => prevSelectedCount - 1);
+  };
+  
+
   return (
     <>
       <header>
@@ -60,7 +68,7 @@ function App() {
         <Available handleActiveTab={handleActiveTab} selected={selected}></Available>
 
         {activeTab === 1 && <Players handleSelectedPlayers={handleCountPlayers} />}
-        {activeTab === 2 && <SelectPlayers selectedPlayers={selectedPlayers} />}
+        {activeTab === 2 && <SelectPlayers selectedPlayers={selectedPlayers} handleActiveTab={handleActiveTab} removePlayer={removePlayer} />}
       </main>
 
       <footer>
