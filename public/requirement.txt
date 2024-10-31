@@ -32,7 +32,7 @@ Design the newsletter section according to Figma. ✅
 ➤ Footer
 Design the footer section following the Figma design. ✅
 ▄︻デ══━一💥 Challenges
-Use React-Toastify: Replace all alerts in the interface with React-Toastify for better user notifications. ❌
+Use React-Toastify: Replace all alerts in the interface with React-Toastify for better user notifications. ✅
 
 Implement Selected Player Remove Functionality: Add a "Remove" button to each selected player card. On click, the player should be removed from the selected players' section. ✅
 
@@ -42,12 +42,13 @@ Implement The Perfect Validation on Player selection: - on clicking choose, play
 
 Change Your Web-Application Title: change the web application title. If it show Vite-react some marks will be deducted. ✅
 
-**Beautify GitHub Repository **: Create an attractive README.md for your GitHub repository with the following:
+➤ **Beautify GitHub Repository **: Create an attractive README.md for your GitHub repository with the following:
 
-Name of your project.
-A brief description.
-Technologies used.
-3 key features of your project.
+Name of your project. ✅
+A brief description. ✅
+Technologies used. ✅
+3 key features of your project.✅
+
 Optional Feature
 Implement a login experience in the newsletter section using LocalStorage.
 On subscribing, store the user's email and display a personalized message on reload if the email exists in LocalStorage.

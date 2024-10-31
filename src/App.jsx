@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Available from './components/Available/Available'
 import Banner from './components/Banner/Banner'
@@ -15,6 +17,17 @@ function App() {
 
   const handleCredit = (totalCredit) => {
     setCredit((prev) => prev + totalCredit);
+    toast('Claim the coin');
+    toast.success(`Claim the ${totalCredit} coin`, {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
   }
 
   const [activeTab, setActiveTab] = useState(1);
@@ -32,12 +45,39 @@ function App() {
 
     console.log(isPlayerSelected)
     if (price > credit) {
-      alert('Insufficient money')
+      toast.error('Not enough money to buy this player Claim some Credit', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     } else if (isPlayerSelected) {
-      alert('Player are already selected');
+      toast.error('Player are already selected', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       return;
     } else if (selected >= 5) {
-      alert('You cant select more than 5 player')
+      toast.warn('Player is already 6', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
     else {
       setSelected((prev) => prev + 1);
@@ -48,6 +88,16 @@ function App() {
         ...prev,
         { player_id, profile_image, name, batting_style, price }
       ]);
+      toast.success(`Congrats !! ${name} is now in your squad`, {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
   }
 
@@ -82,6 +132,8 @@ function App() {
         <Subscribe></Subscribe>
         <Footer></Footer>
       </footer>
+
+      <ToastContainer />
     </>
   )
 }

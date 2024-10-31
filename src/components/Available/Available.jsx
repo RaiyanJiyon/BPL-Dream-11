@@ -32,8 +32,8 @@ const Available = ({ handleActiveTab, selected, activeButton, handleActiveButton
 
 Available.propTypes = {
     handleActiveTab: PropTypes.func.isRequired,
-    selected: PropTypes.num.isRequired,
-    activeButton: PropTypes.num.isRequired,
+    selected: PropTypes.num,
+    activeButton: PropTypes.num,
     handleActiveButton: PropTypes.func.isRequired,
 }
 
