@@ -32,7 +32,8 @@ function App() {
     if (price > credit) {
       alert('Insufficient money')
     } else if (isPlayerSelected) {
-      alert('Player are already selected')
+      alert('Player are already selected');
+      return;
     } else if (selected >= 5) {
       alert('You cant select more than 5 player')
     }
@@ -40,7 +41,7 @@ function App() {
       setSelected((prev) => prev + 1);
 
       setCredit(credit - price);
-      
+
       setSelectedPlayers((prev) => [
         ...prev,
         { player_id, profile_image, name, batting_style }
