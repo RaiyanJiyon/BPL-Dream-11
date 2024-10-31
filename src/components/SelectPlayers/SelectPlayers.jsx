@@ -21,7 +21,7 @@ const SelectPlayers = ({ selectedPlayers, handleActiveTab, removePlayer }) => {
                 ))
             }
 
-            <div className=' sm:w-1/5  border border-[#e7fe29] rounded-2xl p-2'>
+            <div className='sm:w-1/5  border border-[#e7fe29] rounded-2xl p-2'>
                 <button onClick={() => handleActiveTab(1)} className="w-full btn bg-[#E7FE29] text-black font-bold border-none">Add More Player</button>
             </div>
         </div>

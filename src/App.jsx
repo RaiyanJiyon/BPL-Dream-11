@@ -11,6 +11,7 @@ import SelectPlayers from './components/SelectPlayers/SelectPlayers'
 function App() {
 
   const [credit, setCredit] = useState(0);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleCredit = (totalCredit) => {
     setCredit((prev) => prev + totalCredit);
@@ -20,6 +21,7 @@ function App() {
 
   const handleActiveTab = (tabValue) => {
     setActiveTab(tabValue);
+    setActiveButton(tabValue)
   }
 
   const [selected, setSelected] = useState(0);
@@ -65,7 +67,12 @@ function App() {
       </header>
 
       <main>
-        <Available handleActiveTab={handleActiveTab} selected={selected}></Available>
+        <Available
+         handleActiveTab={handleActiveTab} 
+         selected={selected} 
+         activeButton={activeButton}
+         handleActiveButton={setActiveButton}
+         />
 
         {activeTab === 1 && <Players handleSelectedPlayers={handleCountPlayers} />}
         {activeTab === 2 && <SelectPlayers selectedPlayers={selectedPlayers} handleActiveTab={handleActiveTab} removePlayer={removePlayer} />}
