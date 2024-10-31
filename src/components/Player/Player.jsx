@@ -18,7 +18,7 @@ const Player = ({ player, handleSelectedPlayers }) => {
                 <img
                     src={profile_image}
                     alt="Shoes"
-                    className="rounded-xl object-cover"
+                    className="rounded-xl object-fill w-full h-[175px]"
                 />
             </figure>
             <div className="card-body items-center text-center w-11/12 mx-auto px-0">

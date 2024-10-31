@@ -57,7 +57,7 @@
     {
         "player_id": "PLR006",
         "name": "Rohit Sharma",
-        "profile_image": "./pictures/rohit-sharma.avif",
+        "profile_image": "./pictures/rohit-sharma.webp",
         "region": "India",
         "playing_role": "Batsman",
         "icc_rating": 841,
@@ -178,7 +178,7 @@
     {
         "player_id": "PLR017",
         "name": "Mohammed Shami",
-        "profile_image": "./pictures/shami.webp",
+        "profile_image": "./pictures/Shami.webp",
         "region": "India",
         "playing_role": "Bowler",
         "icc_rating": 838,
