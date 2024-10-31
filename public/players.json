@@ -8,7 +8,7 @@
         "icc_rating": 857,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Medium",
-        "price": 10500000
+        "price": 105000
     },
     {
         "player_id": "PLR002",
@@ -19,7 +19,7 @@
         "icc_rating": 829,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Off-break",
-        "price": 8200000
+        "price": 82000
     },
     {
         "player_id": "PLR003",
@@ -30,7 +30,7 @@
         "icc_rating": 812,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Off-break",
-        "price": 7800000
+        "price": 78000
     },
     {
         "player_id": "PLR004",
@@ -41,7 +41,7 @@
         "icc_rating": 845,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Leg-break",
-        "price": 9100000
+        "price": 91000
     },
     {
         "player_id": "PLR005",
@@ -52,7 +52,7 @@
         "icc_rating": 865,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Fast",
-        "price": 8900000
+        "price": 89000
     },
     {
         "player_id": "PLR006",
@@ -63,7 +63,7 @@
         "icc_rating": 841,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Off-break",
-        "price": 9500000
+        "price": 95000
     },
     {
         "player_id": "PLR007",
@@ -74,7 +74,7 @@
         "icc_rating": 836,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Off-break",
-        "price": 8400000
+        "price": 84000
     },
     {
         "player_id": "PLR008",
@@ -85,7 +85,7 @@
         "icc_rating": 839,
         "batting_style": "Left Handed",
         "bowling_style": "Left-arm Fast",
-        "price": 7900000
+        "price": 79000
     },
     {
         "player_id": "PLR009",
@@ -96,7 +96,7 @@
         "icc_rating": 826,
         "batting_style": "Left Handed",
         "bowling_style": "Right-arm Fast-medium",
-        "price": 9800000
+        "price": 98000
     },
     {
         "player_id": "PLR010",
@@ -107,7 +107,7 @@
         "icc_rating": 862,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Fast",
-        "price": 8700000
+        "price": 87000
     },
     {
         "player_id": "PLR011",
@@ -118,7 +118,7 @@
         "icc_rating": 831,
         "batting_style": "Left Handed",
         "bowling_style": "Left-arm Orthodox",
-        "price": 7200000
+        "price": 72000
     },
     {
         "player_id": "PLR012",
@@ -129,7 +129,7 @@
         "icc_rating": 819,
         "batting_style": "Right Handed",
         "bowling_style": "N/A",
-        "price": 8100000
+        "price": 81000
     },
     {
         "player_id": "PLR013",
@@ -140,7 +140,7 @@
         "icc_rating": 853,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Leg-break",
-        "price": 8500000
+        "price": 85000
     },
     {
         "player_id": "PLR014",
@@ -151,7 +151,7 @@
         "icc_rating": 828,
         "batting_style": "Left Handed",
         "bowling_style": "Right-arm Leg-break",
-        "price": 8300000
+        "price": 83000
     },
     {
         "player_id": "PLR015",
@@ -162,7 +162,7 @@
         "icc_rating": 847,
         "batting_style": "Right Handed",
         "bowling_style": "Left-arm Fast",
-        "price": 7600000
+        "price": 76000
     },
     {
         "player_id": "PLR016",
@@ -173,7 +173,7 @@
         "icc_rating": 824,
         "batting_style": "Left Handed",
         "bowling_style": "N/A",
-        "price": 7400000
+        "price": 74000
     },
     {
         "player_id": "PLR017",
@@ -184,7 +184,7 @@
         "icc_rating": 838,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Fast",
-        "price": 7800000
+        "price": 78000
     },
     {
         "player_id": "PLR018",
@@ -195,7 +195,7 @@
         "icc_rating": 825,
         "batting_style": "Left Handed",
         "bowling_style": "Right-arm Off-break",
-        "price": 7100000
+        "price": 71000
     },
     {
         "player_id": "PLR019",
@@ -206,7 +206,7 @@
         "icc_rating": 844,
         "batting_style": "Left Handed",
         "bowling_style": "Left-arm Orthodox",
-        "price": 8600000
+        "price": 86000
     },
     {
         "player_id": "PLR020",
@@ -217,6 +217,6 @@
         "icc_rating": 821,
         "batting_style": "Right Handed",
         "bowling_style": "Right-arm Fast-medium",
-        "price": 7500000
+        "price": 75000
     }
 ]

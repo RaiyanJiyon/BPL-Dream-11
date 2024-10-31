@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 const SelectPlayers = ({ selectedPlayers, handleActiveTab, removePlayer }) => {
     return (
         <div className="w-11/12 mx-auto mt-8 space-y-6">
+                        <h2 className="text-2xl font-bold">Selected Player ({selectedPlayers.length}/6)</h2>
             {
                 selectedPlayers.map((player, index) => (
                     <div key={index} className="flex justify-between items-center p-4 rounded-2xl border border-[#1313131A]">

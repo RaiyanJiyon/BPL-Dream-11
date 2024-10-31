@@ -3,7 +3,7 @@ import bannerShadow from '../../assets/bg-shadow.png'
 import bannerImage from '../../assets/banner-main.png'
 
 const Banner = ({handleCredit}) => {
-    const totalCredit = 100000000;
+    const totalCredit = 1000000;
 
     return (
         <div

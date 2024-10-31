@@ -17,8 +17,7 @@ function App() {
 
   const handleCredit = (totalCredit) => {
     setCredit((prev) => prev + totalCredit);
-    toast('Claim the coin');
-    toast.success(`Claim the ${totalCredit} coin`, {
+    toast.success(`Credit Added to Your Account`, {
       position: "top-center",
       autoClose: 3000,
       hideProgressBar: false,
@@ -67,7 +66,7 @@ function App() {
         theme: "light",
         });
       return;
-    } else if (selected >= 5) {
+    } else if (selected >= 6) {
       toast.warn('Player is already 6', {
         position: "top-center",
         autoClose: 3000,
@@ -105,6 +104,16 @@ function App() {
     setSelectedPlayers((prevSelected) =>
       prevSelected.filter((player) => player.player_id !== player_id)
     );
+    toast.warn('Player Removed', {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
     setSelected((prevSelectedCount) => prevSelectedCount - 1);
   };
   

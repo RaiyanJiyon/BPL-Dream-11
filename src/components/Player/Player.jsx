@@ -62,7 +62,7 @@ const Player = ({ player, handleSelectedPlayers }) => {
 
                 <div className="w-full flex justify-between items-center mt-2">
                     <h3 className="w-full text-left font-bold">Price: ${price}</h3>
-                    <button onClick={() => handleSelectedPlayers(player_id, profile_image, name, batting_style, price)} className="btn bg-white border border-[#e0e0e2]">Choose Player</button>
+                    <button onClick={() => handleSelectedPlayers(player_id, profile_image, name, batting_style, price)} className="btn bg-white border border-[#e0e0e2] hover:bg-[#e7fe29]">Choose Player</button>
                 </div>
             </div>
         </div>
