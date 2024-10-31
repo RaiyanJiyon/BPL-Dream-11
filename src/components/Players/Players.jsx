@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 import Player from "../Player/Player";
 
 const Players = ({ handleSelectedPlayers }) => {
@@ -21,5 +21,9 @@ const Players = ({ handleSelectedPlayers }) => {
         </div>
     );
 };
+
+Players.propTypes = {
+    handleSelectedPlayers: PropTypes.func.isRequired
+}
 
 export default Players;

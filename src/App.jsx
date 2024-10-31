@@ -26,7 +26,7 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([])
 
   const handleCountPlayers = (player_id, profile_image, name, batting_style, price) => {
-    const isPlayerSelected = selectedPlayers.some((player) => player.player_id === player_id)
+    const isPlayerSelected = selectedPlayers.some(player => player.player_id === player_id)
 
     console.log(isPlayerSelected)
     if (price > credit) {
@@ -38,12 +38,9 @@ function App() {
     }
     else {
       setSelected((prev) => prev + 1);
-      console.log('Okay', selected)
 
-      if (selected > 5) {
-        alert('You cant add more than 5 player')
-      }
-
+      setCredit(credit - price);
+      
       setSelectedPlayers((prev) => [
         ...prev,
         { player_id, profile_image, name, batting_style }
