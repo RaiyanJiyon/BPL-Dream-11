@@ -2,7 +2,7 @@ import bannerShadow from '../../assets/bg-shadow.png'
 
 const Subscribe = () => {
     return (
-        <div className='relative z-10 top-28 w-11/12 mx-auto mt-32 border border-white rounded-3xl p-3'>
+        <div className='relative z-10 top-28 w-11/12 mx-auto mt-12 border border-white rounded-3xl p-3'>
             <div
                 className="hero rounded-3xl bg-white"
                 style={{
@@ -13,7 +13,7 @@ const Subscribe = () => {
                         <h1 className="mt-8 mb-5 text-3xl text-black font-semibold">
                             Subscribe to our Newsletter
                         </h1>
-                        <p className="mb-5 text-[#131313B3]">
+                        <p className="mb-5 text-[#131313B3] font-medium">
                             Get the latest updates and news right in your inbox!
                         </p>
                         <div className="flex items-center w-[100%] justify-between gap-2 md:gap-0 pb-14">

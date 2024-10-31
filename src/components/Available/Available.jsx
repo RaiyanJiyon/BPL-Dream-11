@@ -4,7 +4,7 @@ const Available = ({ handleActiveTab, selected, activeButton, handleActiveButton
     return (
         <div className="w-11/12 mx-auto mt-16 flex justify-between">
             <h2 className="card-title">Available Players</h2>
-            <div className="flex border rounded-full overflow-hidden">
+            <div className="flex overflow-hidden">
                 <button
                     onClick={() => {
                         handleActiveButton(1);

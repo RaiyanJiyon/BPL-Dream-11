@@ -40,12 +40,13 @@ const Nav = ({ credit }) => {
             </div>
             <div className="navbar-end">
             <ul className="hidden lg:flex justify-center items-center menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li>
+                    <a>Home</a></li>
                     <li><a>Fixture</a></li>
                     <li><a>Teams</a></li>
                     <li><a>Schedules</a></li>
                 </ul>
-            <button className='flex items-center gap-1 p-2 border border-[#1313131A] rounded-xl text-black font-semibold'><span>{credit}</span> Coin <img className='' src={coinImage} alt="" /></button>
+            <button className='flex items-center gap-1 p-2 border border-[#1313131A] rounded-xl text-black font-semibold'><span>{credit}</span> Coin <img className='w-[25%]' src={coinImage} alt="" /></button>
             </div>
         </div>
     );

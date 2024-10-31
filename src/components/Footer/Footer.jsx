@@ -13,10 +13,12 @@ const Footer = () => {
                 </nav>
                 <nav className='mr-32'>
                     <h6 className="footer-title text-white font-semibold">Quick Links</h6>
-                    <a className="link link-hover text-[#FFFFFF99]">Home</a>
-                    <a className="link link-hover text-[#FFFFFF99]">Service</a>
-                    <a className="link link-hover text-[#FFFFFF99]">About</a>
-                    <a className="link link-hover text-[#FFFFFF99]">Contact</a>
+                    <ol className='flex flex-col pl-4'>
+                        <li className="link link-hover text-[#FFFFFF99] list-disc">Home</li>
+                        <li className="link link-hover text-[#FFFFFF99] list-disc">Service</li>
+                        <li className="link link-hover text-[#FFFFFF99] list-disc">About</li>
+                        <li className="link link-hover text-[#FFFFFF99] list-disc">Contact</li>
+                    </ol>
                 </nav>
                 <form className='w-11/12 md:w-full'>
                     <h6 className="footer-title text-white font-semibold">Subscribe</h6>
