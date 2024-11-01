@@ -55,7 +55,7 @@ function App() {
         theme: "light",
         });
     } else if (isPlayerSelected) {
-      toast.error('Player are already selected', {
+      toast.error('player already selected', {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
